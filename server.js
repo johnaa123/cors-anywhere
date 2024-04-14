@@ -22,8 +22,8 @@ var checkRateLimit = require('./lib/rate-limit')(process.env.CORSANYWHERE_RATELI
 var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
-  //originWhitelist: originWhitelist,
-  originWhitelist: [https://corsanywhere.singtelhub.com],
+  originWhitelist: originWhitelist,
+  //originWhitelist: [https://corsanywhere.singtelhub.com],
   requireHeader: ['origin', 'x-requested-with'],
   checkRateLimit: checkRateLimit,
   removeHeaders: [

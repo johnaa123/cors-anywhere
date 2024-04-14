@@ -24,7 +24,8 @@ cors_proxy.createServer({
   originBlacklist: originBlacklist,
   originWhitelist: originWhitelist,
   //originWhitelist: [https://corsanywhere.singtelhub.com],
-  requireHeader: ['origin', 'x-requested-with'],
+  //requireHeader: ['origin', 'x-requested-with'],
+  requireHeader: [],
   checkRateLimit: checkRateLimit,
   removeHeaders: [
     'cookie',

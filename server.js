@@ -39,6 +39,7 @@ cors_proxy.createServer({
     // 'x-forwarded-for',
     // 'x-forwarded-proto',
     // 'x-forwarded-port',
+    'content-encoding',
   ],
   redirectSameOrigin: true,
   httpProxyOptions: {
